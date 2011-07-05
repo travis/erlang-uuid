@@ -1,8 +1,8 @@
-## erlang-uuid
+# erlang-uuid
 
 An Erlang module for work with UUID.
 
-### Usage
+## Usage
 
     $ cd erlang-uuid
     $ erl -pa ebin/
@@ -16,7 +16,7 @@ An Erlang module for work with UUID.
     3> UUIDAsBinary = uuid:to_binary(UUIDAsString).
     <<23,161,8,3,240,100,71,24,174,70,74,109,60,136,65,92>>
 
-### Copyright
+## Copyright
 
 Copyright (c) 2008, Travis Vachon
 All rights reserved. See LICENSE.
