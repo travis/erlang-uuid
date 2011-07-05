@@ -4,6 +4,8 @@ An Erlang module for work with UUID.
 
 ## Usage
 
+At Erlang console:
+
     $ cd erlang-uuid
     $ erl -pa ebin/
     Erlang R14A (erts-5.8) [source] [64-bit] [smp:2:2] [rq:2] [async-threads:0] [hipe] [kernel-poll:false]
@@ -15,6 +17,13 @@ An Erlang module for work with UUID.
     "17a10803-f064-4718-ae46-4a6d3c88415c"
     3> UUIDAsBinary = uuid:to_binary(UUIDAsString).
     <<23,161,8,3,240,100,71,24,174,70,74,109,60,136,65,92>>
+
+Or in a project, at "deps" directory:
+
+    $ git clone https://github.com/travis/erlang-uuid
+    $ cd erlang-uuid
+    $ make ungit
+    $ make
 
 ## Copyright
 
