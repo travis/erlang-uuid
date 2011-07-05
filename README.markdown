@@ -2,9 +2,18 @@
 
 An Erlang module for work with UUID.
 
+## Install
+
+Where you wish (let's say at "deps" directory of your OTP application):
+
+    $ git clone https://github.com/travis/erlang-uuid
+    $ cd erlang-uuid
+    $ make ungit
+    $ make
+
 ## Usage
 
-At Erlang console:
+At Erlang console, for example:
 
     $ cd erlang-uuid
     $ erl -pa ebin/
@@ -17,13 +26,6 @@ At Erlang console:
     "17a10803-f064-4718-ae46-4a6d3c88415c"
     3> UUIDAsBinary = uuid:to_binary(UUIDAsString).
     <<23,161,8,3,240,100,71,24,174,70,74,109,60,136,65,92>>
-
-Or in a project, at "deps" directory:
-
-    $ git clone https://github.com/travis/erlang-uuid
-    $ cd erlang-uuid
-    $ make ungit
-    $ make
 
 ## Copyright
 
