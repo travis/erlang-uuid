@@ -33,10 +33,10 @@
 
 % Generates a random binary UUID.
 v4() ->
-    v4(crypto:rand_uniform(1 bsl 48),
-       crypto:rand_uniform(1 bsl 12),
-       crypto:rand_uniform(1 bsl 32),
-       crypto:rand_uniform(1 bsl 30)).
+    v4(crypto:rand_uniform(1, 1 bsl 48),
+       crypto:rand_uniform(1, 1 bsl 12),
+       crypto:rand_uniform(1, 1 bsl 32),
+       crypto:rand_uniform(1, 1 bsl 30)).
 
 v4(R1, R2, R3, R4) ->
     <<R1:48, 4:4, R2:12, 2:2, R3:32, R4: 30>>.
