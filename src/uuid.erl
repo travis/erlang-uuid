@@ -49,7 +49,7 @@ get_parts(<<TL:32, TM:16, THV:16, CSR:8, CSL:8, N:48>>) ->
 % Converts a UUID string in the format of 550e8400-e29b-41d4-a716-446655440000
 % (with or without the dashes) to binary.
 to_binary(U)->
-    convert(lists:filter(fun(Elem) -> Elem /= $- end, U), []).
+    unicode:characters_to_binary(to_string(U)).
 
 % Converts a list of pairs of hex characters (00-ff) to bytes.
 convert([], Acc)->
