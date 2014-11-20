@@ -1,9 +1,10 @@
 {application, uuid,
  [
   {description, "UUID v4 (random) generation and utilities"},
-  {vsn, git},
+  {vsn, "1.0"},
   {registered, []},
   {applications, []},
+  {modules, []},
   {env, []}
  ]}.
 
